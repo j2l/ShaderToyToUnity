@@ -36,7 +36,6 @@ internal static class ShadertoyToUnity{
 		code = code.Replace("atan(x,y)", "atan2(y,x)");
 		code = code.Replace("*=", "mul");
 		code = code.Replace("uv.y =", "1 – uv.y");
-		code = code.Replace("fragColor =", "return");
 
 
 		Regex open = new Regex(@"mat(.)\s*(\()");
