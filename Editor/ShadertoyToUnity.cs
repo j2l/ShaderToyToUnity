@@ -34,7 +34,6 @@ internal static class ShadertoyToUnity{
 		code = code.Replace("Texture2D", "Tex2D");
 		code = code.Replace("atan(x,y)", "atan2(y,x)");
 		code = code.Replace("*=", "mul");
-		code = code.Replace("uv.y =", "1 – uv.y");
 
 
 		Regex open = new Regex(@"mat(.)\s*(\()");
